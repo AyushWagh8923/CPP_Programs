@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+string student, id;
+
+cout << "Are you a student? (Yes/No): ";
+cin >> student;
+
+if (student == "Yes")
+{
+cout << "Do you have your ID? (Yes/No): ";
+cin >> id;
+
+if (id == "Yes")
+{
+cout << "You can enter college lab";
+}
+else if (id == "No")
+{
+cout << "You cannot enter college lab";
+}
+}
+
+else if (student == "No")
+{
+cout << "Entry denied. Only students can enter";
+}
+
+return 0;
+}
